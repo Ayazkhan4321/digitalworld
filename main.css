@@ -1,0 +1,566 @@
+a {
+    color: aliceblue;
+    text-decoration: none;
+    color: #bfe517;
+    font-weight: 200px;
+    flex-wrap: wrap;
+}
+
+.size {
+    font-size: 60px;
+    font-style: oblique;
+}
+
+.container {
+    background: url(/backimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: aliceblue;
+    width: 95%;
+    height: 95%;
+    padding: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+
+}
+
+#mybutton {
+    margin-top: 20px;
+    margin-left: 13%;
+    font-size: 21px;
+}
+
+img {
+    padding-left: 100px;
+    flex-wrap: wrap;
+    padding-right: 20px;
+}
+
+.container-content {
+    display: flex;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.y1 {
+    padding: 70px;
+}
+
+.img2 {
+    padding: 70px;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+.big-container {
+    display: flex;
+    padding: 80px;
+
+    background: linear-gradient(45deg, rgb(171, 119, 204), rgb(28, 205, 61));
+}
+
+.tv {
+    padding-right: 100px;
+}
+
+.container1 {
+    border: 2px solid green;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    background: linear-gradient(45deg, #FDEB82, #F78FAD);
+    transition: background 2s ease, transform 2s ease;
+    /* Match background and transform duration */
+}
+
+.container1:hover {
+    background: linear-gradient(45deg, #e6ca29, #cf46de);
+    transform: scale(1.1);
+    transition: 2s;
+    /* Smooth transition for both background and transform */
+}
+
+
+
+.container2 {
+    border: 2px solid green;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 50px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    background: linear-gradient(45deg, #FDEB82, #F78FAD);
+    transition: background 2s ease, transform 2s ease;
+}
+
+.container2:hover {
+    background: linear-gradient(45deg, #e6ca29, #cf46de);
+    transform: scale(1.1);
+    transition: 2s;
+    /* Smooth transition for both background and transform */
+}
+
+.container3 {
+    border: 2px solid green;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    background: linear-gradient(45deg, #FDEB82, #F78FAD);
+    transition: background 2s ease, transform 2s ease;
+}
+
+.container3:hover {
+    background: linear-gradient(45deg, #e6ca29, #cf46de);
+    transform: scale(1.1);
+    transition: 2s;
+    /* Smooth transition for both background and transform */
+}
+
+.s {
+    font-size: 50px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+
+.big-container3 {
+
+    background-color: #4944A2;
+    color: aliceblue;
+    display: flex;
+}
+
+.m {
+    font-size: 70px;
+    padding-bottom: 20px;
+    color: orange;
+}
+
+.s2 {
+    font-size: 50px;
+
+}
+
+.s3 {
+    font-size: 50px;
+}
+
+
+hr {
+    color: black;
+    margin-right: 25%;
+    margin-left: 22%;
+}
+
+.paragraph {
+    font-size: 32px;
+}
+
+.p1 {
+    padding: 100px;
+    background: linear-gradient(45deg, #ade571, #e53411);
+    flex-wrap: wrap;
+}
+
+.text-page {
+    background: url(/contact_g.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 5%;
+    padding-left: 15%;
+}
+
+.title-page {
+    font-size: 45px;
+}
+
+.box {
+    border: 3px solid cornflowerblue;
+    padding: 40px;
+    display: contents;
+
+    border-radius: 30px;
+
+}
+
+.p8 {
+    font-size: 27px;
+    padding-left: 105px;
+}
+
+.search {
+    margin-left: 10px;
+    width: 50%;
+}
+
+.name-label {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Input field styling */
+#name {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    width: 60%;
+    color: #b63b3b;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* Ensure proper sizing */
+    outline: none;
+    transition: border-color 0.3s ease;
+    /* Smooth transition */
+}
+
+/* On focus, change border color */
+.name:focus {
+    border-color: #0066cc;
+}
+
+
+
+.email-label {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Input field styling */
+#email {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    width: 60%;
+    color: #b63b3b;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* Ensure proper sizing */
+    outline: none;
+    transition: border-color 0.3s ease;
+    /* Smooth transition */
+}
+
+/* On focus, change border color */
+#email:focus {
+    border-color: #0066cc;
+}
+
+.number-label {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Input field styling */
+#number {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    width: 60%;
+    color: #b63b3b;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* Ensure proper sizing */
+    outline: none;
+    transition: border-color 0.3s ease;
+    /* Smooth transition */
+}
+
+/* On focus, change border color */
+#number:focus {
+    border-color: #0066cc;
+}
+
+.message-label {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Textarea styling */
+#message {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 120px;
+    /* Adjust the height as needed */
+    color: #b63b3b;
+    font-size: 18px;
+    font-weight: normal;
+    border: 2px solid cornflowerblue;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* Ensure proper sizing */
+    outline: none;
+    resize: none;
+    /* Prevents resizing by the user */
+    transition: border-color 0.3s ease;
+    overflow-wrap: break-word;
+    /* Ensures text wrapping */
+}
+
+/* On focus, change border color */
+#message-input:focus {
+    border-color: #0066cc;
+}
+
+#btn {
+    margin-left: 40%;
+}
+
+.co {
+    display: flex;
+}
+
+.pa {
+    padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+    .container-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        padding-left: 0;
+    }
+
+    .container1,
+    .container2,
+    .container3 {
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .s,
+    .s2,
+    .s3,
+    .m {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #mybutton,
+    #btn {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .big-container,
+    .big-container3 {
+        flex-direction: column;
+    }
+
+    .p8 {
+        font-size: 20px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+#mybutton,
+#btn {
+    width: 100%;
+    margin-left: 0;
+}
+
+.container,
+.big-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+
+    h1,
+    h2,
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    background-color: #5f0164;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* Add padding to ensure content doesn't touch the screen edges on smaller devices */
+}
+
+ul.social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+ul.social-icons li {
+    display: inline-block;
+}
+
+ul.social-icons li a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul.social-icons li img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+    /* Makes the icons white on a dark background */
+    transition: transform 0.3s ease;
+}
+
+ul.social-icons li a:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 0;
+    }
+
+    ul.social-icons {
+        gap: 15px;
+        /* Reduce space between icons for smaller screens */
+    }
+
+    ul.social-icons li img {
+        width: 35px;
+        height: 35px;
+        /* Scale down the icons slightly */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    ul.social-icons {
+        flex-direction: column;
+        /* Stack icons vertically for better readability */
+        gap: 10px;
+    }
+
+    ul.social-icons li img {
+        width: 30px;
+        height: 30px;
+        /* Further reduce icon size for very small screens */
+    }
+}
+
+#name,
+#email,
+#number,
+#message {
+    width: 100%;
+}
